@@ -5,7 +5,18 @@ FAQ regarding the Project
 <h3>How to deploy the docker container </h3>
 You must have Docker setup on your System secondly Create the Dockerfile in the directory which contain your project .
 Check out the Dockerfile uploaded in the main branch .
-run the following command to Containerize the API -<br>
+run the following command to Containerize the API
+got to cmd , browse to the directory where your docker file and project is then use the following command to build the docker image
+the content of the Dockerfile will look like something as follow -<br>
+<br>
+<br>FROM python:3
+<br>COPY requirements.txt .
+<br>RUN pip3 install  -r requirements.txt
+<br>COPY . .
+<br>EXPOSE 5000
+<br>ENTRYPOINT [ "python" ]
+<br>CMD ["run.py"]
+<br>
 STEP 1 :<code>docker build --tag flask-demo .</code>
 <br>the output should look something similar to this -<br>
 
