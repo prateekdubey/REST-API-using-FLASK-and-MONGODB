@@ -1,5 +1,6 @@
 # REST-API-using-FLASK-and-MONGODB
 Its a basic flask API which performs the CRUD function and few range operations and uses mongodb as a database and deploy the API Locally using using docker and hosting the database on **MongoDB Atlas** clusture and for Client we use **MongoDB Compass**.
+**For running this project run the requirement.txt file** to download all the dependency .
 FAQ regarding the Project 
 <h3>How to deploy the docker container </h3>
 You must have Docker setup on your System secondly Create the Dockerfile in the directory which contain your project .
